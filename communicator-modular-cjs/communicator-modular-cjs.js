@@ -1,5 +1,6 @@
 /**
- * common js example
+ * commonjs example
+ * commonjs load modules synchronously
  */
 
 const communicatorModularCJS = {};
