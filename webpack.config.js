@@ -9,7 +9,8 @@ module.exports = {
         }]
     },
     resolve: {
-        extensions: ['.tsx','.ts','.js']
+        extensions: ['.tsx','.ts','.js'],
+        modules: ['communicator-modular-umd']
     },
     output: {
         filename: "bundle.js"

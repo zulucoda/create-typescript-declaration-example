@@ -12,7 +12,7 @@
  *~ loaded outside a module loader environment, declare that global here.
  *~ Otherwise, delete this declaration.
  */
-export as namespace communicatorModularUMD;
+// export as namespace communicatorModularUMD;
 
 /*~ If this module has methods, declare them as functions like so.
  */
