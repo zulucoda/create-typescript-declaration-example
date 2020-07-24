@@ -6,13 +6,14 @@ class Communicator {
     greet(message: string) {
         // return `<h1>${ _.toUpper(message) }</h1>`;
         // return communicatorGlobal.greet(message);
-        const _settings = new communicatorGlobal.Settings(message);
-        communicatorGlobal.settings = _settings;
-        return communicatorGlobal.greet();
+        // const _settings = new communicatorGlobal.Settings(message);
+        // communicatorGlobal.settings = _settings;
+        // return communicatorGlobal.greet();
+        return communicatorModularUMD.greet(message);
     }
 }
 
 const communicator = new Communicator();
-document!.body.innerHTML = communicator.greet('Hello, world for global settings...');
+document!.body.innerHTML = communicator.greet('Hello, world for UMD');
 
 
