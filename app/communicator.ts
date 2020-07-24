@@ -1,5 +1,6 @@
 // import * as _ from 'lodash';
 import * as communicatorModularUMD from 'communicator-modular-umd';
+import * as communicatorModularAMD from 'communicator-modular-amd';
 
 class Communicator {
     constructor() {}
@@ -10,12 +11,13 @@ class Communicator {
         // const _settings = new communicatorGlobal.Settings(message);
         // communicatorGlobal.settings = _settings;
         // return communicatorGlobal.greet();
-        return communicatorModularUMD.otherFunctions.goodbye();
+        // return communicatorModularUMD.otherFunctions.goodbye();
         // return communicatorModularUMD.greet(message);
+        return communicatorModularAMD.greet(message)
     }
 }
 
 const communicator = new Communicator();
-document!.body.innerHTML = communicator.greet('Hello, world for UMD');
+document!.body.innerHTML = communicator.greet('Hello, world for AMD***');
 
 
