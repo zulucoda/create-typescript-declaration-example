@@ -17,3 +17,7 @@
 /*~ If this module has methods, declare them as functions like so.
  */
 export function greet(message: string): string;
+
+export namespace otherFunctions {
+    export function goodbye():string;
+}

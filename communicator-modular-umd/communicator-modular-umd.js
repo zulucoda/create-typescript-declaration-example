@@ -15,8 +15,15 @@
         return `<h1> ${message} </h1>`;
     }
 
+    const otherFunctions = {
+        goodbye: function () {
+            return `<h1> Good bye </h1>`
+        }
+    }
+
     // exposed public methods
     return {
         greet,
+        otherFunctions
     }
 });

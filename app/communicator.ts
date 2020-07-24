@@ -10,7 +10,8 @@ class Communicator {
         // const _settings = new communicatorGlobal.Settings(message);
         // communicatorGlobal.settings = _settings;
         // return communicatorGlobal.greet();
-        return communicatorModularUMD.greet(message);
+        return communicatorModularUMD.otherFunctions.goodbye();
+        // return communicatorModularUMD.greet(message);
     }
 }
 
