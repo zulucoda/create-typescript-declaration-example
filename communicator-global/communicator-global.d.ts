@@ -23,5 +23,10 @@
  *~ You should also place types (interfaces and type alias) here.
  */
 declare namespace communicatorGlobal {
-    function greet(message: string): string;
+    function greet(): string;
+    let settings: Settings;
+    class Settings {
+        constructor(message: string);
+        message: string;
+    }
 }

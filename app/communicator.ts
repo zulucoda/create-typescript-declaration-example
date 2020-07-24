@@ -5,11 +5,14 @@ class Communicator {
 
     greet(message: string) {
         // return `<h1>${ _.toUpper(message) }</h1>`;
-        return communicatorGlobal.greet(message);
+        // return communicatorGlobal.greet(message);
+        const _settings = new communicatorGlobal.Settings(message);
+        communicatorGlobal.settings = _settings;
+        return communicatorGlobal.greet();
     }
 }
 
 const communicator = new Communicator();
-document!.body.innerHTML = communicator.greet('Hello, world for global...');
+document!.body.innerHTML = communicator.greet('Hello, world for global settings...');
 
 
