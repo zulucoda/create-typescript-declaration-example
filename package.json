@@ -10,10 +10,10 @@
   "author": "Muzikayise Flynn Buthelezi (zuluCoda)",
   "license": "ISC",
   "devDependencies": {
-    "ts-loader": "^8.0.1",
+    "ts-loader": "^8.4.0",
     "typescript": "^3.9.7",
-    "webpack": "^4.44.0",
-    "webpack-cli": "^3.3.12",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
